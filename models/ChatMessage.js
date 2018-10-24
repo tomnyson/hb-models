@@ -15,7 +15,7 @@ const Model = new Schema({
     userImage: String,
     userName: String,
     txHash: String,
-    receiver: String,
+    receiver: { type: [String], default: [] },
     isBlock: { type: Boolean, default: false },
     isComplete: { type: Boolean, required: true, index: 1, default: false },
     status: { type: Number, required: true, index: 1, default: 1 },
