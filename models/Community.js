@@ -20,6 +20,7 @@ const Model = new Schema({
     link: String,
     profileImage: String,
     default: { type: Boolean, default: false },
+    official: { type: Boolean, default: false },
     createdAt: { type: Date, index: 1 },
     updatedAt: { type: Date, index: 1 },
 });
