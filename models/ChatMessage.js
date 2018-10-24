@@ -23,7 +23,6 @@ const Model = new Schema({
     isPrivate: { type: Boolean, default: true },
     resetCount: { type: Number, default: 0 },
     numReceiver: { type: Number, default: 0 },
-    numReceived: { type: Number, default: 0 },
     createdAt: { type: Date, index: 1 },
     updatedAt: { type: Date, index: 1 },
 });
