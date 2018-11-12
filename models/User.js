@@ -40,7 +40,8 @@ const Model = new Schema({
         timeJoin: Date,
         isSent: {type: Boolean, default: false},
         receiveNotification: {type: Boolean, default: false},
-        _id: false
+        _id: false,
+        community: String
     }],
     friend_list: [{
         id: String,
