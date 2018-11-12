@@ -23,6 +23,10 @@ const Model = new Schema({
     official: { type: Boolean, default: false },
     createdAt: { type: Date, index: 1 },
     updatedAt: { type: Date, index: 1 },
+    channels: [{
+        id: String,
+        name: String,
+    }]
 });
 Model.pre('save', function(next) {
     const now = new Date();
