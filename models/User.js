@@ -37,7 +37,7 @@ const Model = new Schema({
             {
                 id: String,
                 name: String,
-                type: Number
+                type: {type: Number}
             }
         ]
     }],
