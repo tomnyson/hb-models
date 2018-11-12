@@ -32,7 +32,13 @@ const Model = new Schema({
         link: String,
         profileImage: String,
         default: { type: Boolean, default: false },
-        official: { type: Boolean, default: false }
+        official: { type: Boolean, default: false },
+        channels: [
+            {
+                id: String,
+                name: String,
+            }
+        ]
     }],
     channels: [{
         id: { type: String, required: true, ref: 'chat_channel', index: 1 },
@@ -40,8 +46,7 @@ const Model = new Schema({
         timeJoin: Date,
         isSent: {type: Boolean, default: false},
         receiveNotification: {type: Boolean, default: false},
-        _id: false,
-        community: String
+        _id: false
     }],
     friend_list: [{
         id: String,
