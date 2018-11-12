@@ -19,7 +19,20 @@ const Model = new Schema({
         isAdmin: Boolean,
         name: String,
         timeJoin: Date,
-        _id: false
+        _id: false,
+        detail: String,
+        private: { type: Boolean, default: false },
+        image: String,
+        channel_ids: [String],
+        members: {
+            count: {type: Number, default: 0},
+            normal: [],
+            admin: [],
+        },
+        link: String,
+        profileImage: String,
+        default: { type: Boolean, default: false },
+        official: { type: Boolean, default: false }
     }],
     channels: [{
         id: { type: String, required: true, ref: 'chat_channel', index: 1 },
