@@ -10,4 +10,8 @@ const Notification = require('./models/Notification');
 const User = require('./models/User');
 const UserAddress = require('./models/UserAddress');
 const UserAdmin = require('./models/UserAdmin');
-module.exports = {Channel, ChatMessage, CoinmarketcapToken, Community, CommunityAdmin, DefaultFriend, Gift, Notification, User, UserAddress, UserAdmin};
+const UserAddressTransaction = require('./models/UserAddressTransaction');
+const UserAddressInternalTransaction = require('./models/UserAddressInternalTransaction');
+const UserAddressTokenTransaction = require('./models/UserAddressTokenTransaction');
+module.exports = {Channel, ChatMessage, CoinmarketcapToken, Community, CommunityAdmin, DefaultFriend, Gift, Notification, User, UserAddress, UserAdmin, 
+    UserAddressTransaction, UserAddressInternalTransaction, UserAddressTokenTransaction};
