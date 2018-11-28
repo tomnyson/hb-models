@@ -14,6 +14,10 @@ const Model = new Schema({
     tokens: { type: Array, default: [] },
     tranxCurrentBlock: { type: Number, default: 0 },
     totalTransactions: { type: Number, default: 0 },
+    tranxCurrentBlockInternal: { type: Number, default: 0 },
+    totalTransactionsInternal: { type: Number, default: 0 },
+    tranxCurrentBlockToken: { type: Number, default: 0 },
+    totalTransactionsToken: { type: Number, default: 0 },
     createdAt: { type: Date, index: 1 },
     updatedAt: { type: Date, index: 1 },
 });
