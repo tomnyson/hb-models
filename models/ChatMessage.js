@@ -22,6 +22,7 @@ const Model = new Schema({
     deleteBy: { type: [String], default: [] },
     isPrivate: { type: Boolean, default: true },
     resetCount: { type: Number, default: 0 },
+    likes: String,
     numReceiver: { type: Number, default: 0 },
     createdAt: { type: Date, index: 1 },
     updatedAt: { type: Date, index: 1 },
